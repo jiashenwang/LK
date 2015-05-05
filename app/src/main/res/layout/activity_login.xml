@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Login">
+
+    <EditText
+        android:id="@+id/textbox_login_email"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:background="@xml/edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:hint=" E-mail"
+        android:drawableLeft="@drawable/email_icon"
+        />
+    <EditText
+        android:id="@+id/textbox_login_password"
+        android:layout_below="@id/textbox_login_email"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:background="@xml/edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:hint=" Password"
+        android:drawableLeft="@drawable/lock_icon"
+        />
+
+    <Button
+        android:id="@+id/buttin_login"
+        android:layout_below="@id/textbox_login_password"
+        android:layout_width="271dp"
+        android:layout_height="41dp"
+        android:background="@color/linke_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Log In"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>
